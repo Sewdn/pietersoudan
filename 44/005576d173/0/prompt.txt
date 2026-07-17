@@ -33,3 +33,11 @@ Drabstraat 148
 
 btw: BE0553.981.747
 rekeningnummer: BE83 9734 1178 2515
+
+---
+
+/git-commits this first iteration and setup
+
+---
+
+/git-commits this first iteration and setup
