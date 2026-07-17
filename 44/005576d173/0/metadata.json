@@ -1,0 +1,126 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "44005576d173",
+  "session_id": "48b24b91-81d5-44a0-a404-e15b05c60af6",
+  "strategy": "manual-commit",
+  "created_at": "2026-07-17T07:45:00.805777Z",
+  "branch": "main",
+  "checkpoints_count": 4,
+  "files_touched": [
+    "apps/frontend-landing/.cta.json",
+    "apps/frontend-landing/.gitignore",
+    "apps/frontend-landing/.scaffold/target.json",
+    "apps/frontend-landing/.vscode/settings.json",
+    "apps/frontend-landing/README.md",
+    "apps/frontend-landing/package.json",
+    "apps/frontend-landing/public/favicon.ico",
+    "apps/frontend-landing/public/logo192.png",
+    "apps/frontend-landing/public/logo512.png",
+    "apps/frontend-landing/public/manifest.json",
+    "apps/frontend-landing/public/robots.txt",
+    "apps/frontend-landing/src/App.tsx",
+    "apps/frontend-landing/src/components/landing-page.tsx",
+    "apps/frontend-landing/src/index.css",
+    "apps/frontend-landing/src/routeTree.gen.ts",
+    "apps/frontend-landing/src/router.tsx",
+    "apps/frontend-landing/src/routes/__root.tsx",
+    "apps/frontend-landing/src/routes/index.tsx",
+    "apps/frontend-landing/src/styles.css",
+    "apps/frontend-landing/tsconfig.json",
+    "apps/frontend-landing/tsr.config.json",
+    "apps/frontend-landing/vite.config.ts",
+    "bun.lock",
+    "docs/cv/CV Pieter Soudan (EN).md",
+    "docs/cv/CV Pieter Soudan (EN).pdf",
+    "docs/cv/CV Pieter Soudan (NL).pdf",
+    "docs/cv/CV Pieter Soudan cover letter (EN).md",
+    "docs/cv/CV Pieter Soudan cover letter (EN).pdf",
+    "docs/cv/CV Pieter Soudan motivatiebrief (NL).pdf",
+    "docs/cv/CV_Pieter-Soudan.pdf",
+    "packages/ui/src/styles/themes/default.css"
+  ],
+  "agent": "Claude Code",
+  "model": "composer-2.5-fast",
+  "turn_id": "c78d4e690832",
+  "token_usage": {
+    "input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 0,
+    "api_call_count": 0
+  },
+  "session_metrics": {
+    "turn_count": 6
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-07-17T07:45:00.801422Z",
+    "agent_lines": 481,
+    "agent_removed": 99,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 481,
+    "total_lines_changed": 580,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 984,
+      "user_lines_removed": 54,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".scaffold/metrics/scaffold-commands.jsonl": 1,
+        ".scaffold/metrics/snapshots.jsonl": 2,
+        "apps/frontend-landing/.cta.json": 16,
+        "apps/frontend-landing/.gitignore": 13,
+        "apps/frontend-landing/.scaffold/target.json": 7,
+        "apps/frontend-landing/.vscode/settings.json": 11,
+        "apps/frontend-landing/README.md": 193,
+        "apps/frontend-landing/package.json": 51,
+        "apps/frontend-landing/public/manifest.json": 25,
+        "apps/frontend-landing/public/robots.txt": 3,
+        "apps/frontend-landing/src/routeTree.gen.ts": 59,
+        "apps/frontend-landing/src/router.tsx": 19,
+        "apps/frontend-landing/src/routes/__root.tsx": 54,
+        "apps/frontend-landing/src/routes/index.tsx": 14,
+        "apps/frontend-landing/src/styles.css": 17,
+        "apps/frontend-landing/tsconfig.json": 28,
+        "apps/frontend-landing/tsr.config.json": 3,
+        "apps/frontend-landing/vite.config.ts": 14,
+        "bun.lock": 443,
+        "pietersoudan.code-workspace": 11
+      }
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 1271,
+      "agent_lines_removed": 99
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 1463,
+      "agent_lines_removed": 99
+    },
+    {
+      "checkpoint_number": 4,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 5,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 1469,
+      "agent_lines_removed": 99
+    }
+  ]
+}

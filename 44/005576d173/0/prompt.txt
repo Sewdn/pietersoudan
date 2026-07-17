@@ -1,0 +1,35 @@
+I have scaffolded this application or this project to build me a portfolio website. I have also scaffolded a new app in the apps folder as a tanstack start frontend application in react called landing where I want to develop the static landing page for the portfolio website.@apps/frontend-landing 
+
+As a first version for this static landing page, I just want to Set up a very lightweight page with company information and a short description in in my specializations as a software engineer system architect and IT consultant. I have added my curriculum Vitae as inspiration please set up the design for this static front end page and make sure to use tailwind and ShadCN, set up a Tailwind theme in the UI package.@packages/ui/src/styles/themes/default.css 
+
+@docs/cv/CV_Pieter-Soudan.pdf @docs/cv/CV Pieter Soudan motivatiebrief (NL).pdf @docs/cv/CV Pieter Soudan cover letter (EN).pdf @docs/cv/CV Pieter Soudan (EN).pdf @docs/cv/CV Pieter Soudan (NL).pdf 
+
+Company information:
+Sweet & Savory
+BE0553981747
+
+---
+
+I have scaffolded this application or this project to build me a portfolio website. I have also scaffolded a new app in the apps folder as a tanstack start frontend application in react called landing where I want to develop the static landing page for the portfolio website.@apps/frontend-landing 
+
+As a first version for this static landing page, I just want to Set up a very lightweight page with company information and a short description in in my specializations as a software engineer system architect and IT consultant. I have added my curriculum Vitae as inspiration please set up the design for this static front end page and make sure to use tailwind and ShadCN, set up a Tailwind theme in the UI package.@packages/ui/src/styles/themes/default.css 
+
+@docs/cv/CV_Pieter-Soudan.pdf @docs/cv/CV Pieter Soudan motivatiebrief (NL).pdf @docs/cv/CV Pieter Soudan cover letter (EN).pdf @docs/cv/CV Pieter Soudan (EN).pdf @docs/cv/CV Pieter Soudan (NL).pdf 
+
+Company information:
+Sweet & Savory
+BE0553981747
+
+---
+
+@docs/cv/CV Pieter Soudan (EN).pdf @docs/cv/CV Pieter Soudan cover letter (EN).pdf Please convert these PDFs to readable Markdown files.
+
+---
+
+Please also add following company information:
+Sweet & Savory
+Drabstraat 148
+2550 kontich
+
+btw: BE0553.981.747
+rekeningnummer: BE83 9734 1178 2515

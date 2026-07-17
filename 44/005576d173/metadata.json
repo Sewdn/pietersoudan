@@ -1,0 +1,55 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "44005576d173",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 4,
+  "files_touched": [
+    "apps/frontend-landing/.cta.json",
+    "apps/frontend-landing/.gitignore",
+    "apps/frontend-landing/.scaffold/target.json",
+    "apps/frontend-landing/.vscode/settings.json",
+    "apps/frontend-landing/README.md",
+    "apps/frontend-landing/package.json",
+    "apps/frontend-landing/public/favicon.ico",
+    "apps/frontend-landing/public/logo192.png",
+    "apps/frontend-landing/public/logo512.png",
+    "apps/frontend-landing/public/manifest.json",
+    "apps/frontend-landing/public/robots.txt",
+    "apps/frontend-landing/src/App.tsx",
+    "apps/frontend-landing/src/components/landing-page.tsx",
+    "apps/frontend-landing/src/index.css",
+    "apps/frontend-landing/src/routeTree.gen.ts",
+    "apps/frontend-landing/src/router.tsx",
+    "apps/frontend-landing/src/routes/__root.tsx",
+    "apps/frontend-landing/src/routes/index.tsx",
+    "apps/frontend-landing/src/styles.css",
+    "apps/frontend-landing/tsconfig.json",
+    "apps/frontend-landing/tsr.config.json",
+    "apps/frontend-landing/vite.config.ts",
+    "bun.lock",
+    "docs/cv/CV Pieter Soudan (EN).md",
+    "docs/cv/CV Pieter Soudan (EN).pdf",
+    "docs/cv/CV Pieter Soudan (NL).pdf",
+    "docs/cv/CV Pieter Soudan cover letter (EN).md",
+    "docs/cv/CV Pieter Soudan cover letter (EN).pdf",
+    "docs/cv/CV Pieter Soudan motivatiebrief (NL).pdf",
+    "docs/cv/CV_Pieter-Soudan.pdf",
+    "packages/ui/src/styles/themes/default.css"
+  ],
+  "sessions": [
+    {
+      "metadata": "/44/005576d173/0/metadata.json",
+      "transcript": "/44/005576d173/0/full.jsonl",
+      "content_hash": "/44/005576d173/0/content_hash.txt",
+      "prompt": "/44/005576d173/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 0,
+    "api_call_count": 0
+  }
+}
