@@ -225,3 +225,11 @@ Clicking my name (title) in the app bar should always direct to home, the top of
 ---
 
 Clicking my name (title) in the app bar should always direct to home, the top of the page. Also currently the menu with the three items disappears on mobile replace this with a handbook icon in the top left and make sure this opens a small Navigation panel (using shadcn base components).
+
+---
+
+/git-commits all changes
+
+---
+
+/git-commits all changes
