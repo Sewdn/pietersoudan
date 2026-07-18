@@ -1,0 +1,243 @@
+I have scaffolded this application or this project to build me a portfolio website. I have also scaffolded a new app in the apps folder as a tanstack start frontend application in react called landing where I want to develop the static landing page for the portfolio website.@apps/frontend-landing 
+
+As a first version for this static landing page, I just want to Set up a very lightweight page with company information and a short description in in my specializations as a software engineer system architect and IT consultant. I have added my curriculum Vitae as inspiration please set up the design for this static front end page and make sure to use tailwind and ShadCN, set up a Tailwind theme in the UI package.@packages/ui/src/styles/themes/default.css 
+
+@docs/cv/CV_Pieter-Soudan.pdf @docs/cv/CV Pieter Soudan motivatiebrief (NL).pdf @docs/cv/CV Pieter Soudan cover letter (EN).pdf @docs/cv/CV Pieter Soudan (EN).pdf @docs/cv/CV Pieter Soudan (NL).pdf 
+
+Company information:
+Sweet & Savory
+BE0553981747
+
+---
+
+I have scaffolded this application or this project to build me a portfolio website. I have also scaffolded a new app in the apps folder as a tanstack start frontend application in react called landing where I want to develop the static landing page for the portfolio website.@apps/frontend-landing 
+
+As a first version for this static landing page, I just want to Set up a very lightweight page with company information and a short description in in my specializations as a software engineer system architect and IT consultant. I have added my curriculum Vitae as inspiration please set up the design for this static front end page and make sure to use tailwind and ShadCN, set up a Tailwind theme in the UI package.@packages/ui/src/styles/themes/default.css 
+
+@docs/cv/CV_Pieter-Soudan.pdf @docs/cv/CV Pieter Soudan motivatiebrief (NL).pdf @docs/cv/CV Pieter Soudan cover letter (EN).pdf @docs/cv/CV Pieter Soudan (EN).pdf @docs/cv/CV Pieter Soudan (NL).pdf 
+
+Company information:
+Sweet & Savory
+BE0553981747
+
+---
+
+@docs/cv/CV Pieter Soudan (EN).pdf @docs/cv/CV Pieter Soudan cover letter (EN).pdf Please convert these PDFs to readable Markdown files.
+
+---
+
+Please also add following company information:
+Sweet & Savory
+Drabstraat 148
+2550 kontich
+
+btw: BE0553.981.747
+rekeningnummer: BE83 9734 1178 2515
+
+---
+
+/git-commits this first iteration and setup
+
+---
+
+/git-commits this first iteration and setup
+
+---
+
+@docs/designs/stitch_minimalist_agentic_systems_portfolio/code.htmlNow, please look at a design for another portfolio website iteration I have designed. Look at the code and the tailwind setup and theme. I want you to use the same bold and design and full width typographic design also incorporate a bit of the content of this landing page, please also look at the screenshsot and mimic the design in the current implementation and tailwinf theme@docs/designs/stitch_minimalist_agentic_systems_portfolio/DESIGN.md @docs/designs/stitch_minimalist_agentic_systems_portfolio/screen.png .
+
+---
+
+@docs/designs/stitch_minimalist_agentic_systems_portfolio/code.htmlNow, please look at a design for another portfolio website iteration I have designed. Look at the code and the tailwind setup and theme. I want you to use the same bold and design and full width typographic design also incorporate a bit of the content of this landing page, please also look at the screenshsot and mimic the design in the current implementation and tailwinf theme@docs/designs/stitch_minimalist_agentic_systems_portfolio/DESIGN.md @docs/designs/stitch_minimalist_agentic_systems_portfolio/screen.png .
+
+---
+
+Are we sure the tailwind setup is correct? I don't think all of the tailwind files are being sourced right now because the design is not really as expected.
+
+---
+
+Are we sure the tailwind setup is correct? I don't think all of the tailwind files are being sourced right now because the design is not really as expected.
+
+---
+
+Please also check all contrasting foreground and background colours since lots of sections are not readable or visible right now. Please look at the screenshots only the introductory header hero page is currently readable.The black section after the yellow section and the following white section and grey section are not displaying any content as you can see in screenshots.
+
+---
+
+Now please make sure that content in the different sections are being animated in and out when scrolling over the different sections. Use a subtle, zoom and a fade for the motion.
+
+---
+
+Now please make sure that content in the different sections are being animated in and out when scrolling over the different sections. Use a subtle, zoom and a fade for the motion.
+
+---
+
+@verbouwing/apps/cli-ops/src/services/fly-deploy-catalog.ts @verbouwing/apps/cli-ops/src/services/fly-interactive-deploy-service.ts @verbouwing/apps/cli-ops/src/services/fly-operations-service.ts Please look at a reference implementation to setup a CLI application for deploying the created frontend application as a statically hosted front-end website build (on fly.io)@verbouwing/deploy/README.md
+
+---
+
+/git-commits ops cli
+
+---
+
+/git-commits ops cli
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:102-103 Make this list data driven.
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:102-103 Make this list data driven.
+
+---
+
+only allow (word)breaks between the headlineRoles on the delimter character. control them as seprate elements
+
+---
+
+only allow (word)breaks between the headlineRoles on the delimter character. control them as seprate elements
+
+---
+
+improve readability by decreasing character spacing
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:127 give this XP another foreground color, making the +23yrs standout as the only emphasised item in the h1
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:127 give this XP another foreground color, making the +23yrs standout as the only emphasised item in the h1
+
+---
+
+yes, revert
+
+---
+
+yes, revert
+
+---
+
+I don't want the the limiter to be shown at the start of a line so when the page width is limited and the headlines are broken into multiple lines I want to remove the the limited at the front of each line, over the start of each line. How to do this do this using pure CSS?
+
+---
+
+Also note trading delimited at the end of a line, the line break is delimited enough.
+
+---
+
+Also no trailing delimiter at the end of a line, the line break is delimited enough.
+
+---
+
+Also no trailing delimiter at the end of a line, the line break is delimited enough.
+
+---
+
+revert this last chnage. Weird quirks when removing the delimeter influences the line break algorithms (continuous loop)
+
+---
+
+revert this last chnage. Weird quirks when removing the delimeter influences the line break algorithms (continuous loop)
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:147-169 change this section with a label cloud or a cloud of labels of core values for what I stand for or I represent@pietersoudan/docs/cv/CV Pieter Soudan (EN).md @pietersoudan/docs/cv/CV Pieter Soudan cover letter (EN).md
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:147-169 change this section with a label cloud or a cloud of labels of core values for what I stand for or I represent@pietersoudan/docs/cv/CV Pieter Soudan (EN).md @pietersoudan/docs/cv/CV Pieter Soudan cover letter (EN).md
+
+---
+
+Center this block and make this cloud animated. Add some motion to individual cloud labels and make sure they are animated as a group as well.
+
+Make sure the cloud is centered and is not stretched over the entire fluid width of the page.
+
+Set up a reusable animated label cloud component.
+
+---
+
+Remove the shimmer animation.
+
+---
+
+Remove the shimmer animation.
+
+---
+
+No, I only wanted to remove the shimmering of the boxes, not the continuous loop of subtle movement. This was okay.
+
+---
+
+No, I only wanted to remove the shimmering of the boxes, not the continuous loop of subtle movement. This was okay.
+
+---
+
+Now reintroduce the box intro state again. The shimmer is being caused by the subtle animated rotations because of the anti-aliasing of the border. Make sure the float and drift are still animated but don't allow rotation changes.
+
+---
+
+Remove the borders from the labels and add a subtle background that stands out from black, even if only slightly.
+
+---
+
+Remove the borders from the labels and add a subtle background that stands out from black, even if only slightly.
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:78-93  Make sure this list of core values are written as truly values. System architecture is not really a value, domain-driven design is because it is a design principle I advocate for
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:78-93  Make sure this list of core values are written as truly values. System architecture is not really a value, domain-driven design is because it is a design principle I advocate for
+
+---
+
+make sure the docked up bar is hidden when scrolling down only show again and keep it docked when scrolling back up, make the hiding and showing of this appbar animated with natural physics based motion design.
+
+---
+
+make sure the docked up bar is hidden when scrolling down only show again and keep it docked when scrolling back up, make the hiding and showing of this appbar animated with natural physics based motion design.
+
+---
+
+make sure the docked app bar is hidden when scrolling down only show again and keep it docked when scrolling back up, make the hiding and showing of this appbar animated with natural physics based motion design.
+
+---
+
+make sure the docked app bar is hidden when scrolling down only show again and keep it docked when scrolling back up, make the hiding and showing of this appbar animated with natural physics based motion design.
+
+---
+
+Clicking my name in the add bar should always direct to home, the top of the page. Also currently the menu with the three items disappears on mobile replace this with a handbook icon in the top left and make sure this opens a small Navigation panel (using shadcn base components).
+
+---
+
+Clicking my name in the add bar should always direct to home, the top of the page. Also currently the menu with the three items disappears on mobile replace this with a handbook icon in the top left and make sure this opens a small Navigation panel (using shadcn base components).
+
+---
+
+Clicking my name (title) in the app bar should always direct to home, the top of the page. Also currently the menu with the three items disappears on mobile replace this with a handbook icon in the top left and make sure this opens a small Navigation panel (using shadcn base components).
+
+---
+
+Clicking my name (title) in the app bar should always direct to home, the top of the page. Also currently the menu with the three items disappears on mobile replace this with a handbook icon in the top left and make sure this opens a small Navigation panel (using shadcn base components).
+
+---
+
+/git-commits all changes
+
+---
+
+/git-commits all changes
+
+---
+
+Implement a shader that is being used as a background to for an animated grid. Also, make a shader variation for other background animations and apply this background animation to the section of the label cloud. Be inspired by the example implementation in the static mockup for this design.@pietersoudan/docs/designs/stitch_minimalist_agentic_systems_portfolio/code.html
+
+---
+
+Implement a shader that is being used as a background to for an animated grid. Also, make a shader variation for other background animations and apply this background animation to the section of the label cloud. Be inspired by the example implementation in the static mockup for this design.@pietersoudan/docs/designs/stitch_minimalist_agentic_systems_portfolio/code.html

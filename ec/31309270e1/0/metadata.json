@@ -1,0 +1,67 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "ec31309270e1",
+  "session_id": "48b24b91-81d5-44a0-a404-e15b05c60af6",
+  "strategy": "manual-commit",
+  "created_at": "2026-07-18T10:21:19.535287Z",
+  "branch": "main",
+  "checkpoints_count": 3,
+  "files_touched": [
+    "apps/frontend-landing/src/components/landing-page.tsx",
+    "apps/frontend-landing/src/components/shader-background/index.ts",
+    "apps/frontend-landing/src/components/shader-background/shader-background.tsx",
+    "apps/frontend-landing/src/components/shader-background/shaders.ts",
+    "apps/frontend-landing/src/components/shader-background/use-shader-canvas.ts",
+    "apps/frontend-landing/src/styles.css"
+  ],
+  "agent": "Claude Code",
+  "model": "composer-2.5-fast",
+  "turn_id": "2291c4512bb7",
+  "token_usage": {
+    "input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 0,
+    "api_call_count": 0
+  },
+  "session_metrics": {
+    "turn_count": 61,
+    "context_tokens": 183145,
+    "context_window_size": 200000
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-07-18T10:21:19.516071Z",
+    "agent_lines": 411,
+    "agent_removed": 13,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 1,
+    "total_committed": 411,
+    "total_lines_changed": 425,
+    "agent_percentage": 99.76470588235294,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 85,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 4,
+      "user_lines_added": 0,
+      "user_lines_removed": 3,
+      "agent_lines_added": 497,
+      "agent_lines_removed": 13
+    }
+  ]
+}
