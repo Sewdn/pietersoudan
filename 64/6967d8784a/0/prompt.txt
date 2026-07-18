@@ -257,3 +257,11 @@ Implement a shader that is being used as a background to for an animated grid. A
 ---
 
 @pietersoudan/apps/cli-ops/pietersoudan-config.ts What steps to take to deploy this application to fly?
+
+---
+
+I removed the shaded backgrounds. We'll revisit later. Please commit.
+
+---
+
+I removed the shaded backgrounds. We'll revisit later. Please commit.
