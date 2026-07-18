@@ -13,7 +13,7 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'Sweet & Savory · Pieter Soudan',
+        title: 'Pieter Soudan | System Architect',
       },
       {
         name: 'description',
@@ -21,14 +21,20 @@ export const Route = createRootRoute({
           'Independent IT consultant specializing in software engineering, system architecture, and full-stack web development.',
       },
     ],
-    links: [{ rel: 'stylesheet', href: appCss }],
+    links: [
+      { rel: 'stylesheet', href: appCss },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700;800;900&family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap',
+      },
+    ],
   }),
   shellComponent: RootDocument,
 })
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-theme="default" className="light" suppressHydrationWarning>
+    <html lang="en" data-theme="default" className="scroll-smooth light" suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>

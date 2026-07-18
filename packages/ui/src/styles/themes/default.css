@@ -1,46 +1,50 @@
 /**
- * Default theme — Sweet & Savory portfolio (light / dark).
- * Warm, professional palette for Pieter Soudan · IT consulting.
+ * Default theme — Architectural Brutalism (Sweet & Savory portfolio).
+ * Binary palette, zero radius, typographic hierarchy. See docs/designs/…/DESIGN.md.
  */
 :root {
-  --radius: 0.75rem;
-  --background: oklch(0.99 0.008 85);
-  --foreground: oklch(0.24 0.025 55);
-  --card: oklch(1 0.004 85);
-  --card-foreground: oklch(0.24 0.025 55);
-  --popover: oklch(1 0.004 85);
-  --popover-foreground: oklch(0.24 0.025 55);
-  --primary: oklch(0.52 0.11 58);
-  --primary-foreground: oklch(0.99 0.008 85);
-  --secondary: oklch(0.96 0.018 80);
-  --secondary-foreground: oklch(0.32 0.04 55);
-  --muted: oklch(0.965 0.012 85);
-  --muted-foreground: oklch(0.48 0.03 55);
-  --accent: oklch(0.94 0.035 72);
-  --accent-foreground: oklch(0.32 0.04 55);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.91 0.018 85);
-  --input: oklch(0.91 0.018 85);
-  --ring: oklch(0.52 0.11 58);
+  --radius: 0px;
+  --background: #f9f9f9;
+  --foreground: #1b1b1b;
+  --card: #ffffff;
+  --card-foreground: #1b1b1b;
+  --popover: #ffffff;
+  --popover-foreground: #1b1b1b;
+  --primary: #000000;
+  --primary-foreground: #ffffff;
+  --secondary: #dfe0e0;
+  --secondary-foreground: #616363;
+  --muted: #eeeeee;
+  --muted-foreground: #4c4546;
+  --accent: #e8e8e8;
+  --accent-foreground: #1b1b1b;
+  --destructive: #ba1a1a;
+  --border: #000000;
+  --input: #000000;
+  --ring: #000000;
+  --outline-variant: #cfc4c5;
+  --surface-container-highest: #e2e2e2;
 }
 
 .dark {
-  --background: oklch(0.17 0.018 55);
-  --foreground: oklch(0.96 0.01 85);
-  --card: oklch(0.21 0.02 55);
-  --card-foreground: oklch(0.96 0.01 85);
-  --popover: oklch(0.21 0.02 55);
-  --popover-foreground: oklch(0.96 0.01 85);
-  --primary: oklch(0.72 0.11 68);
-  --primary-foreground: oklch(0.2 0.025 55);
-  --secondary: oklch(0.27 0.022 55);
-  --secondary-foreground: oklch(0.96 0.01 85);
-  --muted: oklch(0.27 0.022 55);
-  --muted-foreground: oklch(0.7 0.025 75);
-  --accent: oklch(0.3 0.035 58);
-  --accent-foreground: oklch(0.96 0.01 85);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 12%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.72 0.11 68);
+  --background: #1b1b1b;
+  --foreground: #f9f9f9;
+  --card: #303030;
+  --card-foreground: #f9f9f9;
+  --popover: #303030;
+  --popover-foreground: #f9f9f9;
+  --primary: #ffffff;
+  --primary-foreground: #000000;
+  --secondary: #474747;
+  --secondary-foreground: #e2e2e2;
+  --muted: #303030;
+  --muted-foreground: #cfc4c5;
+  --accent: #474747;
+  --accent-foreground: #f9f9f9;
+  --destructive: #ffdad6;
+  --border: #ffffff;
+  --input: #ffffff;
+  --ring: #ffffff;
+  --outline-variant: #7e7576;
+  --surface-container-highest: #474747;
 }

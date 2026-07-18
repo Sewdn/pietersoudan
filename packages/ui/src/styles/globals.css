@@ -2,7 +2,8 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-/* Sibling ui-lib (and Storybook): scan composed components for utilities — default scan is this package only. */
+/* Scan this package's components (Storybook + apps that import globals only). */
+@source "../**/*.{ts,tsx}";
 @source "../../../ui-lib/src";
 
 @custom-variant dark (&:is(.dark *));
@@ -33,6 +34,8 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-outline-variant: var(--outline-variant);
+  --color-surface-container-highest: var(--surface-container-highest);
 }
 
 @layer base {

@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+    {
+      "path": "../verbouwing",
+    },
+  ],
+  "settings": {
+    "oxc.enable.oxfmt": true,
+    "oxc.enable.oxlint": true,
+  },
+}

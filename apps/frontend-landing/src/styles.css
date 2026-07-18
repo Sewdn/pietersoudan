@@ -1,6 +1,24 @@
-@import "@pietersoudan/ui/globals.css";
+@import "../../../packages/ui/src/styles/globals.css";
 
+/* Scan app + workspace UI packages so Shadcn primitives pick up utilities. */
 @source "./**/*.{ts,tsx}";
+@source "../../../packages/ui/src/**/*.{ts,tsx}";
+@source "../../../packages/ui-lib/src/**/*.{ts,tsx}";
+
+@theme inline {
+  --font-display: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --spacing-stack-xl: 10rem;
+  --spacing-stack-md: 5rem;
+  --spacing-margin-desktop: 4rem;
+  --spacing-margin-mobile: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 html,
 body,
@@ -10,5 +28,248 @@ body,
 
 body {
   margin: 0;
+  font-family: var(--font-sans);
   font-feature-settings: "kern" 1, "liga" 1;
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+}
+
+@utility font-label-mono {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@utility text-display-xl {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 12vw, 11.25rem);
+  line-height: 0.88;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+@utility text-headline-lg {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 6rem);
+  line-height: 0.94;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+@utility text-headline-md {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 3rem);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+@utility text-body-lg {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+@utility px-page {
+  padding-inline: var(--spacing-margin-mobile);
+
+  @media (width >= 768px) {
+    padding-inline: var(--spacing-margin-desktop);
+  }
+}
+
+@utility py-stack-xl {
+  padding-block: var(--spacing-stack-xl);
+}
+
+@utility py-stack-md {
+  padding-block: var(--spacing-stack-md);
+}
+
+@utility pt-stack-xl {
+  padding-top: var(--spacing-stack-xl);
+}
+
+@utility mt-stack-md {
+  margin-top: var(--spacing-stack-md);
+}
+
+@utility mb-stack-md {
+  margin-bottom: var(--spacing-stack-md);
+}
+
+@utility gap-stack-md {
+  gap: var(--spacing-stack-md);
+}
+
+@utility hover-invert {
+  &:hover {
+    background-color: var(--primary) !important;
+    color: var(--primary-foreground) !important;
+  }
+}
+
+@utility border-brutal {
+  border: 1px solid var(--primary);
+}
+
+@layer components {
+  /*
+   * Docking app bar: hide on scroll down, spring back on scroll up.
+   */
+  .docking-app-bar {
+    position: fixed;
+    inset-inline: 0;
+    top: 0;
+    z-index: 50;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+  }
+
+  .docking-app-bar--hidden {
+    pointer-events: none;
+    transform: translate3d(0, calc(-100% - 1px), 0);
+    transition: transform 0.42s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .docking-app-bar--visible {
+    pointer-events: auto;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.72s cubic-bezier(0.22, 1.28, 0.36, 1);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .docking-app-bar--hidden {
+      transform: translate3d(0, 0, 0);
+      pointer-events: auto;
+      transition: none;
+    }
+
+    .docking-app-bar--visible {
+      transition: none;
+    }
+  }
+
+  /*
+   * Inline role list: suffix separators wrap cleanly — no leading · on new lines.
+   * Use ::after (not ::before) so delimiters stay with the preceding item.
+   */
+  .headline-roles > span {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .headline-roles > span:not(:last-child)::after {
+    content: "·";
+    margin-inline: 0.75em;
+  }
+
+  /*
+   * Label cloud: staggered box entrance, group float, and per-label drift (no rotation —
+   * sub-degree rotate shimmers 1px borders via anti-aliasing).
+   */
+  .label-cloud__group.is-active {
+    animation: label-cloud-group-float 11s ease-in-out infinite;
+  }
+
+  .label-cloud__item {
+    opacity: 0;
+    transform: translateY(14px) scale(0.94);
+    transition:
+      opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: var(--label-cloud-enter-delay, 0ms);
+  }
+
+  .label-cloud__group.is-active .label-cloud__item {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  .label-cloud__item-motion {
+    display: inline-block;
+  }
+
+  .label-cloud__group.is-active .label-cloud__item-motion {
+    animation: label-cloud-item-drift 6.5s ease-in-out infinite;
+    animation-delay: var(--label-cloud-delay, 0s);
+  }
+
+  @keyframes label-cloud-group-float {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+      transform: translate3d(0, -10px, 0);
+    }
+  }
+
+  @keyframes label-cloud-item-drift {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    35% {
+      transform: translate3d(2px, -4px, 0);
+    }
+
+    70% {
+      transform: translate3d(-2px, 3px, 0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .label-cloud__group.is-active {
+      animation: none;
+    }
+
+    .label-cloud__item {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+
+    .label-cloud__group.is-active .label-cloud__item-motion {
+      animation: none;
+    }
+  }
+
+  /*
+   * SSR-safe scroll motion: content stays visible until JS enables motion.
+   * Fades + subtle zoom in/out as sections enter and leave the viewport.
+   */
+  html.scroll-motion-enabled .scroll-motion {
+    opacity: 0;
+    transform: scale(0.97);
+    transition:
+      opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+
+  html.scroll-motion-enabled .scroll-motion.is-in-view {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html.scroll-motion-enabled .scroll-motion {
+      opacity: 1;
+      transform: none;
+      transition: none;
+      will-change: auto;
+    }
+  }
 }

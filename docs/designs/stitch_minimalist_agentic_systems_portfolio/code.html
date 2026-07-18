@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PIETER SOUDAN | SYSTEM ARCHITECT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700;800;900&amp;family=Inter:wght@400;500;700&amp;family=JetBrains+Mono:wght@500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#e2e2e2",
+                        "on-secondary": "#ffffff",
+                        "outline": "#7e7576",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "primary": "#000000",
+                        "on-secondary-fixed-variant": "#454747",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "tertiary-container": "#1b1b1b",
+                        "tertiary": "#000000",
+                        "primary-container": "#1b1b1b",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "outline-variant": "#cfc4c5",
+                        "on-error-container": "#93000a",
+                        "background": "#f9f9f9",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface": "#f9f9f9",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-primary-container": "#848484",
+                        "surface-variant": "#e2e2e2",
+                        "surface-dim": "#dadada",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-tertiary-container": "#848484",
+                        "on-error": "#ffffff",
+                        "on-background": "#1b1b1b",
+                        "secondary-container": "#dfe0e0",
+                        "on-surface": "#1b1b1b",
+                        "inverse-surface": "#303030",
+                        "inverse-on-surface": "#f1f1f1",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#5e5e5e",
+                        "secondary": "#5d5f5f",
+                        "inverse-primary": "#c6c6c6",
+                        "on-surface-variant": "#4c4546",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container-low": "#f3f3f3",
+                        "on-tertiary-fixed": "#1b1b1b",
+                        "surface-container-high": "#e8e8e8",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-secondary-container": "#616363",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "surface-container": "#eeeeee",
+                        "primary-fixed": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                    "spacing": {
+                        "stack-xl": "160px",
+                        "stack-md": "80px",
+                        "unit": "8px",
+                        "gutter": "0px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "24px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "display-xl": ["Hanken Grotesk"],
+                        "display-xl-mobile": ["Hanken Grotesk"],
+                        "body-md": ["Inter"],
+                        "label-mono": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["48px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "letterSpacing": "0", "fontWeight": "400"}],
+                        "headline-lg": ["96px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-md": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "display-xl": ["180px", {"lineHeight": "160px", "letterSpacing": "-0.05em", "fontWeight": "900"}],
+                        "display-xl-mobile": ["80px", {"lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "900"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400"}],
+                        "label-mono": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .reveal-hidden { opacity: 0; transform: translateY(30px); }
+        .reveal-visible { opacity: 1; transform: translateY(0); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .brutalist-border { border: 1px solid black; }
+        .grid-line { background-image: linear-gradient(to right, #000 1px, transparent 1px), linear-gradient(to bottom, #000 1px, transparent 1px); background-size: 100px 100px; }
+        .hover-invert:hover { background-color: #000 !important; color: #fff !important; }
+        .clip-text { -webkit-background-clip: text; background-clip: text; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary selection:text-on-primary overflow-x-hidden">
+<!-- Global Background Shader -->
+<div class="fixed inset-0 z-[-1] opacity-10 pointer-events-none">
+<!-- STITCH_SHADER_START:ANIMATION_5 class="w-full h-full" -->
+<div class="w-full h-full" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_5" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_5');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+varying vec2 v_texCoord;
+
+void main() {
+    vec2 uv = v_texCoord;
+    vec2 mouse = u_mouse / u_resolution;
+    
+    // Create a very subtle, architectural grid noise
+    float grid = sin(uv.x * 50.0) * sin(uv.y * 50.0);
+    grid = smoothstep(0.98, 1.0, grid);
+    
+    // Dynamic 'architectural' scanlines or light shifts
+    float line = sin(uv.y * 100.0 + u_time * 2.0) * 0.02;
+    
+    // Interaction: faint glow around mouse
+    float dist = length(uv - mouse);
+    float glow = smoothstep(0.2, 0.0, dist) * 0.05;
+    
+    vec3 color = vec3(0.98); // Off-white background
+    color -= grid * 0.03;    // Subtle grid lines
+    color += line;           // Moving scanlines
+    color += glow;           // Mouse interaction
+    
+    gl_FragColor = vec4(color, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_5 -->
+</div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-margin-desktop py-4 z-50 bg-surface/90 backdrop-blur-sm border-b border-primary">
+<div class="font-headline-md text-headline-md font-black tracking-tighter text-primary">PIETER SOUDAN</div>
+<div class="hidden md:flex gap-8 items-center font-label-mono text-label-mono uppercase tracking-widest">
+<a class="text-primary border-b-2 border-primary pb-1" href="#home">Home</a>
+<a class="text-on-surface-variant pb-1 hover:bg-primary hover:text-on-primary transition-colors duration-200" href="#experience">Experience</a>
+<a class="text-on-surface-variant pb-1 hover:bg-primary hover:text-on-primary transition-colors duration-200" href="#contact">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 font-label-mono uppercase text-label-mono hover-invert border border-black transition-all">Get in Touch</button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col justify-center px-margin-desktop pt-stack-xl" id="home">
+<div class="reveal-hidden">
+<p class="font-label-mono text-label-mono uppercase tracking-[0.3em] mb-4 text-primary">Senior Software Architect &amp; AI Specialist</p>
+<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl uppercase leading-none break-words">
+                    PIETER<br/>SOUDAN<br/>
+<span class="text-outline-variant">SYSTEM</span><br/>
+                    ARCHITECT
+                </h1>
+</div>
+<div class="mt-stack-md flex flex-col md:flex-row justify-between items-end gap-stack-md reveal-hidden">
+<div class="max-w-2xl border-l-2 border-black pl-8">
+<p class="font-body-lg text-body-lg">
+                        Specializing in high-performance digital construction, engineering robust AI ecosystems, and architecting scalable software solutions for the modern enterprise.
+                    </p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-32 h-1 bg-black"></div>
+<span class="font-label-mono text-label-mono uppercase">EST. 1994 / BELGIUM</span>
+</div>
+</div>
+</section>
+<!-- Intro Section (Brutalist Quote) -->
+<section class="px-margin-desktop py-stack-xl bg-primary text-on-primary">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-unit">
+<div class="md:col-span-8 reveal-hidden">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-8">
+                        "Dreamer and Entrepreneur."
+                    </h2>
+<p class="font-body-lg text-body-lg max-w-3xl opacity-80">
+                        I build more than code. I build systems that endure. My philosophy is rooted in structural integrity, logic, and the uncompromising pursuit of technical precision. Every line of code is a structural beam; every API is a gateway to scale.
+                    </p>
+</div>
+<div class="md:col-span-4 flex justify-end items-center reveal-hidden">
+<div class="w-full aspect-square border border-on-primary p-12 flex items-center justify-center relative overflow-hidden group">
+<span class="material-symbols-outlined text-9xl">architecture</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section (Bento Grid Style) -->
+<section class="px-margin-desktop py-stack-xl" id="experience">
+<div class="mb-stack-md reveal-hidden">
+<h3 class="font-headline-md text-headline-md uppercase border-b border-black pb-4">Professional Trajectory</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-0 border-t border-l border-black reveal-hidden">
+<!-- Lemon Software -->
+<div class="md:col-span-8 p-12 border-r border-b border-black hover:bg-surface-container-highest transition-colors">
+<span class="font-label-mono text-label-mono text-on-surface-variant">2021 — PRESENT</span>
+<h4 class="font-headline-md text-headline-md mt-4 mb-2">LEMON SOFTWARE</h4>
+<p class="font-label-mono text-label-mono uppercase mb-8">Chief Technology Officer</p>
+<p class="font-body-md text-body-md max-w-xl">
+                        Leading the technical vision and engineering culture. Responsible for high-level system architecture, AI integration strategies, and the delivery of complex enterprise software solutions.
+                    </p>
+</div>
+<!-- Textus.io -->
+<div class="md:col-span-4 p-12 border-r border-b border-black hover:bg-surface-container-highest transition-colors">
+<span class="font-label-mono text-label-mono text-on-surface-variant">2019 — 2021</span>
+<h4 class="font-headline-md text-headline-md mt-4 mb-2">TEXTUS.IO</h4>
+<p class="font-label-mono text-label-mono uppercase mb-8">Founder &amp; Architect</p>
+<p class="font-body-md text-body-md">
+                        Pioneered conversational AI tools for retail, focusing on natural language processing and real-time data synchronization.
+                    </p>
+</div>
+<!-- Freelance -->
+<div class="md:col-span-4 p-12 border-r border-b border-black hover:bg-surface-container-highest transition-colors">
+<span class="font-label-mono text-label-mono text-on-surface-variant">2017 — 2019</span>
+<h4 class="font-headline-md text-headline-md mt-4 mb-2">CONSULTANCY</h4>
+<p class="font-label-mono text-label-mono uppercase mb-8">Full-Stack Architect</p>
+<p class="font-body-md text-body-md">
+                        Deploying scalable React and Node.js environments for Series A startups across Europe.
+                    </p>
+</div>
+<!-- Projects -->
+<div class="md:col-span-8 p-12 border-r border-b border-black flex flex-col justify-center items-center bg-black text-white group cursor-pointer overflow-hidden">
+<div class="text-center group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-6xl mb-4">terminal</span>
+<h4 class="font-headline-md text-headline-md uppercase">View System Specs</h4>
+<p class="font-label-mono text-label-mono mt-2">TECHNICAL DOCUMENTATION {{DATA:DOCUMENT:DOCUMENT_1}}</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="px-margin-desktop py-stack-xl bg-secondary-container">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md items-center">
+<div class="reveal-hidden">
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-8">CORE STACK</h3>
+<p class="font-body-lg text-body-lg max-w-md">
+                        Precision-engineered solutions require the right tools. My stack is curated for speed, safety, and ultimate scalability.
+                    </p>
+</div>
+<div class="grid grid-cols-2 gap-unit reveal-hidden">
+<div class="p-8 border border-black bg-background font-label-mono text-label-mono uppercase hover:bg-black hover:text-white transition-colors cursor-default">TypeScript</div>
+<div class="p-8 border border-black bg-background font-label-mono text-label-mono uppercase hover:bg-black hover:text-white transition-colors cursor-default">LLM Ops</div>
+<div class="p-8 border border-black bg-background font-label-mono text-label-mono uppercase hover:bg-black hover:text-white transition-colors cursor-default">GraphQL</div>
+<div class="p-8 border border-black bg-background font-label-mono text-label-mono uppercase hover:bg-black hover:text-white transition-colors cursor-default">Node.js</div>
+<div class="p-8 border border-black bg-background font-label-mono text-label-mono uppercase hover:bg-black hover:text-white transition-colors cursor-default">React/Next.js</div>
+<div class="p-8 border border-black bg-background font-label-mono text-label-mono uppercase hover:bg-black hover:text-white transition-colors cursor-default">Kubernetes</div>
+<div class="p-8 border border-black bg-background font-label-mono text-label-mono uppercase hover:bg-black hover:text-white transition-colors cursor-default">Vector DBs</div>
+<div class="p-8 border border-black bg-background font-label-mono text-label-mono uppercase hover:bg-black hover:text-white transition-colors cursor-default">Rust</div>
+</div>
+</div>
+</section>
+<!-- Image Break -->
+<section class="h-[60vh] relative overflow-hidden">
+<div class="absolute inset-0 bg-fixed bg-cover bg-center" data-alt="A high-contrast, black and white cinematic shot of a sleek, minimalist server room with glowing blue data cables, viewed from a low angle to emphasize the architectural scale and power of the technology. The lighting is dramatic and moody, reflecting a system architect's disciplined and professional world." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2U0-aQwDVO0NxyTJ14Tav6vrXZ1zhxVJwreQLnrzM8zTNZzlBLYexpoiymwIva23bbjwyIN_qbaXHFQKkV5pg59k9OLrvkXTmLIJewVt_BlrJdvLTpqnH64-1HvoSq_12mBaoo4E36seB0J5jW880bnWsdOy5cRrIog1HMWjpShhEsJOm9OpyMi5LGcXqWsDjKmGXWuC5IkGZO4k7y7w8sv2stIdC04Fm_iWz_L_UWOmDDaqCiyc_')"></div>
+<div class="absolute inset-0 bg-primary/40 backdrop-grayscale"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-white text-center">
+<span class="font-label-mono text-label-mono uppercase tracking-widest block mb-4">Current Focus</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase">AI INFRASTRUCTURE</h2>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="px-margin-desktop py-stack-xl bg-background flex flex-col items-center justify-center text-center" id="contact">
+<div class="reveal-hidden w-full">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant mb-4 block">Ready to Build?</span>
+<a class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl uppercase hover:underline decoration-primary underline-offset-8 transition-all break-all" href="mailto:hello@pietersoudan.com">
+                    HELLO@<br class="md:hidden"/>PIETERSOUDAN.COM
+                </a>
+<div class="mt-stack-md flex flex-wrap justify-center gap-stack-md font-headline-md text-headline-md uppercase">
+<a class="hover:line-through transition-all" href="#">LINKEDIN</a>
+<a class="hover:line-through transition-all" href="#">GITHUB</a>
+<a class="hover:line-through transition-all" href="#">READ.CV</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-stack-md gap-unit bg-primary text-on-primary border-t border-primary">
+<div class="font-headline-md text-headline-md text-on-primary">PIETER SOUDAN</div>
+<div class="font-label-mono text-label-mono uppercase text-on-primary/70">
+            © 2024 PIETER SOUDAN. ARCHITECTED FOR PERFORMANCE.
+        </div>
+<div class="flex gap-8 font-label-mono text-label-mono uppercase">
+<a class="text-on-primary/70 hover:text-primary-fixed-dim transition-colors" href="#">Github</a>
+<a class="text-on-primary/70 hover:text-primary-fixed-dim transition-colors" href="#">LinkedIn</a>
+<a class="text-on-primary font-bold underline" href="#">Source</a>
+</div>
+</footer>
+<script>
+        // Intersection Observer for Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-hidden').forEach(el => observer.observe(el));
+
+        // Navigation Active State Logic
+        const sections = document.querySelectorAll('section[id]');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('nav a').forEach(a => {
+                a.classList.remove('text-primary', 'border-b-2', 'border-primary');
+                a.classList.add('text-on-surface-variant');
+                if (a.getAttribute('href').includes(current)) {
+                    a.classList.add('text-primary', 'border-b-2', 'border-primary');
+                    a.classList.remove('text-on-surface-variant');
+                }
+            });
+        });
+
+        // Horizontal Cursor Trail or atmospheric effect can be added here
+        // Using micro-interactions for links
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.style.transform = 'translateY(2px)';
+            });
+            el.addEventListener('mouseup', () => {
+                el.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body></html>

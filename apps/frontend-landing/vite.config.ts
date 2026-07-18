@@ -17,7 +17,17 @@ const config = defineConfig({
       '@': uiSrc,
     },
   },
-  plugins: [devtools(), tailwindcss(), tanstackStart(), viteReact()],
+  plugins: [
+    devtools(),
+    tailwindcss(),
+    tanstackStart({
+      prerender: {
+        enabled: true,
+        crawlLinks: true,
+      },
+    }),
+    viteReact(),
+  ],
 })
 
 export default config
