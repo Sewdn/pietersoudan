@@ -1,0 +1,43 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "c89ee49422e8",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 24,
+  "files_touched": [
+    ".claude/skills/cli-effect-app/SKILL.md",
+    ".cursor/skills/cli-effect-app/SKILL.md",
+    "apps/frontend-landing/src/components/animated-label-cloud.tsx",
+    "apps/frontend-landing/src/components/docking-app-bar.tsx",
+    "apps/frontend-landing/src/components/landing-app-bar.tsx",
+    "apps/frontend-landing/src/components/landing-page.tsx",
+    "apps/frontend-landing/src/components/scroll-reveal.tsx",
+    "apps/frontend-landing/src/index.css",
+    "apps/frontend-landing/src/routes/__root.tsx",
+    "apps/frontend-landing/src/styles.css",
+    "apps/frontend-landing/vite.config.ts",
+    "docs/designs/stitch_minimalist_agentic_systems_portfolio.zip",
+    "docs/designs/stitch_minimalist_agentic_systems_portfolio/DESIGN.md",
+    "docs/designs/stitch_minimalist_agentic_systems_portfolio/code.html",
+    "docs/designs/stitch_minimalist_agentic_systems_portfolio/screen.png",
+    "packages/ui/src/styles/globals.css",
+    "packages/ui/src/styles/themes/default.css",
+    "pietersoudan.code-workspace",
+    "skills/cli-effect-app/SKILL.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/c8/9ee49422e8/0/metadata.json",
+      "transcript": "/c8/9ee49422e8/0/full.jsonl",
+      "content_hash": "/c8/9ee49422e8/0/content_hash.txt",
+      "prompt": "/c8/9ee49422e8/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 0,
+    "api_call_count": 0
+  }
+}
