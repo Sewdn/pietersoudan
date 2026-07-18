@@ -73,3 +73,11 @@ Now please make sure that content in the different sections are being animated i
 ---
 
 @verbouwing/apps/cli-ops/src/services/fly-deploy-catalog.ts @verbouwing/apps/cli-ops/src/services/fly-interactive-deploy-service.ts @verbouwing/apps/cli-ops/src/services/fly-operations-service.ts Please look at a reference implementation to setup a CLI application for deploying the created frontend application as a statically hosted front-end website build (on fly.io)@verbouwing/deploy/README.md
+
+---
+
+/git-commits ops cli
+
+---
+
+/git-commits ops cli
