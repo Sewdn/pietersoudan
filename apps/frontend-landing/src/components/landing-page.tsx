@@ -3,7 +3,6 @@ import { Terminal } from "lucide-react";
 import { AnimatedLabelCloud } from "#/components/animated-label-cloud";
 import { LandingAppBar } from "#/components/landing-app-bar";
 import { ScrollReveal } from "#/components/scroll-reveal";
-import { ShaderBackground } from "#/components/shader-background";
 
 const experience: Array<{
   span: string;
@@ -139,7 +138,6 @@ export function LandingPage() {
         </section>
 
         <section className="relative overflow-hidden bg-primary px-page py-stack-xl text-primary-foreground">
-          <ShaderBackground variant="grid-dark" opacity={0.85} trackMouse />
           <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center text-center">
             <ScrollReveal className="mb-stack-md w-full">
               <h2 className="text-headline-md pb-4 text-primary-foreground">What I Stand For</h2>
@@ -229,7 +227,6 @@ export function LandingPage() {
         </section>
 
         <section className="relative flex h-[50vh] min-h-80 items-center justify-center overflow-hidden md:h-[60vh]">
-          <ShaderBackground variant="scanline-grid" opacity={0.9} trackMouse={false} />
           <ScrollReveal className="relative z-10 text-center text-primary-foreground">
             <span className="font-label-mono mb-4 block tracking-widest text-primary-foreground">
               Current Focus
