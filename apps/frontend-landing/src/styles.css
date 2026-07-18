@@ -247,6 +247,41 @@ body {
   }
 
   /*
+   * Static fallbacks when WebGL or motion is unavailable.
+   */
+  .shader-fallback-grid-light {
+    background-color: rgb(249 249 249 / 0.35);
+    background-image:
+      linear-gradient(to right, rgb(0 0 0 / 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(0 0 0 / 0.04) 1px, transparent 1px);
+    background-size: 100px 100px;
+  }
+
+  .shader-fallback-grid-dark {
+    background-image:
+      linear-gradient(to right, rgb(255 255 255 / 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(255 255 255 / 0.06) 1px, transparent 1px);
+    background-size: 100px 100px;
+  }
+
+  .shader-fallback-scanline-grid {
+    background-image:
+      linear-gradient(to right, rgb(255 255 255 / 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(255 255 255 / 0.06) 1px, transparent 1px),
+      repeating-linear-gradient(
+        0deg,
+        rgb(255 255 255 / 0.03) 0,
+        rgb(255 255 255 / 0.03) 1px,
+        transparent 1px,
+        transparent 4px
+      );
+    background-size:
+      100px 100px,
+      100px 100px,
+      100% 100%;
+  }
+
+  /*
    * SSR-safe scroll motion: content stays visible until JS enables motion.
    * Fades + subtle zoom in/out as sections enter and leave the viewport.
    */
