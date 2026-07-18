@@ -1,0 +1,46 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "b7d6e7b26e1b",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 9,
+  "files_touched": [
+    "apps/cli-ops/.oxlintrc.json",
+    "apps/cli-ops/.scaffold/target.json",
+    "apps/cli-ops/README.md",
+    "apps/cli-ops/bin/run.js",
+    "apps/cli-ops/package.json",
+    "apps/cli-ops/pietersoudan-config.ts",
+    "apps/cli-ops/src/commands/fly.ts",
+    "apps/cli-ops/src/commands/subcommands.ts",
+    "apps/cli-ops/src/index.ts",
+    "apps/cli-ops/src/services/fly-deploy-catalog.ts",
+    "apps/cli-ops/src/services/fly-interactive-deploy-service.ts",
+    "apps/cli-ops/src/services/fly-operations-service.ts",
+    "apps/cli-ops/src/ui/deploy-prompts.ts",
+    "apps/cli-ops/src/ui/ops-ui.ts",
+    "apps/cli-ops/tsconfig.json",
+    "bun.lock",
+    "deploy/README.md",
+    "deploy/frontend-landing/.gitignore",
+    "deploy/frontend-landing/Dockerfile",
+    "deploy/frontend-landing/fly.toml",
+    "deploy/frontend-landing/nginx.conf",
+    "package.json"
+  ],
+  "sessions": [
+    {
+      "metadata": "/b7/d6e7b26e1b/0/metadata.json",
+      "transcript": "/b7/d6e7b26e1b/0/full.jsonl",
+      "content_hash": "/b7/d6e7b26e1b/0/content_hash.txt",
+      "prompt": "/b7/d6e7b26e1b/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 0,
+    "api_call_count": 0
+  }
+}

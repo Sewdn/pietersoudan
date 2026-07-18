@@ -1,0 +1,133 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "b7d6e7b26e1b",
+  "session_id": "48b24b91-81d5-44a0-a404-e15b05c60af6",
+  "strategy": "manual-commit",
+  "created_at": "2026-07-18T09:17:54.533673Z",
+  "branch": "main",
+  "checkpoints_count": 9,
+  "files_touched": [
+    "apps/cli-ops/.oxlintrc.json",
+    "apps/cli-ops/.scaffold/target.json",
+    "apps/cli-ops/README.md",
+    "apps/cli-ops/bin/run.js",
+    "apps/cli-ops/package.json",
+    "apps/cli-ops/pietersoudan-config.ts",
+    "apps/cli-ops/src/commands/fly.ts",
+    "apps/cli-ops/src/commands/subcommands.ts",
+    "apps/cli-ops/src/index.ts",
+    "apps/cli-ops/src/services/fly-deploy-catalog.ts",
+    "apps/cli-ops/src/services/fly-interactive-deploy-service.ts",
+    "apps/cli-ops/src/services/fly-operations-service.ts",
+    "apps/cli-ops/src/ui/deploy-prompts.ts",
+    "apps/cli-ops/src/ui/ops-ui.ts",
+    "apps/cli-ops/tsconfig.json",
+    "bun.lock",
+    "deploy/README.md",
+    "deploy/frontend-landing/.gitignore",
+    "deploy/frontend-landing/Dockerfile",
+    "deploy/frontend-landing/fly.toml",
+    "deploy/frontend-landing/nginx.conf",
+    "package.json"
+  ],
+  "agent": "Claude Code",
+  "model": "composer-2.5-fast",
+  "turn_id": "30c131420bdd",
+  "token_usage": {
+    "input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 0,
+    "api_call_count": 0
+  },
+  "session_metrics": {
+    "turn_count": 18,
+    "context_tokens": 181372,
+    "context_window_size": 200000
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-07-18T09:17:54.521498Z",
+    "agent_lines": 983,
+    "agent_removed": 25,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 983,
+    "total_lines_changed": 1008,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 584,
+      "user_lines_removed": 0,
+      "agent_lines_added": 18,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "docs/designs/stitch_minimalist_agentic_systems_portfolio/DESIGN.md": 157,
+        "docs/designs/stitch_minimalist_agentic_systems_portfolio/code.html": 427
+      }
+    },
+    {
+      "checkpoint_number": 4,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 5,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 1048,
+      "agent_lines_removed": 213
+    },
+    {
+      "checkpoint_number": 6,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 1082,
+      "agent_lines_removed": 219
+    },
+    {
+      "checkpoint_number": 7,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 1065,
+      "agent_lines_removed": 217
+    },
+    {
+      "checkpoint_number": 8,
+      "user_lines_added": 112,
+      "user_lines_removed": 139,
+      "agent_lines_added": 1191,
+      "agent_lines_removed": 222,
+      "user_added_per_file": {
+        "apps/frontend-landing/src/components/landing-page.tsx": 99,
+        "pietersoudan.code-workspace": 13
+      }
+    },
+    {
+      "checkpoint_number": 9,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 10,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 2357,
+      "agent_lines_removed": 249
+    }
+  ]
+}
