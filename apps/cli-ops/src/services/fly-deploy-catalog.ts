@@ -33,16 +33,20 @@ export const flyDeployEnvironments = {
 
 const labelByKey: Record<string, string> = {
   landing: "Portfolio landing",
+  router: "Edge router (pietersoudan.be)",
 };
 
 const categoryByKey: Record<string, FlyDeployAppCategory> = {
   landing: "frontend",
+  router: "frontend",
 };
 
 const buildModeHint = (buildMode: FlyBuildMode): string => {
   switch (buildMode) {
     case "none":
       return "Docker/Fly build";
+    case "router":
+      return "Generated nginx reverse proxy";
     case "vite-static":
       return "Vite static build";
     case "tanstack-static":

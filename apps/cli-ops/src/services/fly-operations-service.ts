@@ -1,11 +1,13 @@
-import { cpSync, existsSync, mkdirSync, rmSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   flyComponentRegistry,
+  flyRouterRoutes,
   formatFlyTargetHint,
   type FlyComponentRegistryEntry,
 } from "../../pietersoudan-config";
+import { renderFlyRouterEntrypoint, renderFlyRouterNginxConf } from "./fly-router-nginx.js";
 import type { FlyDeployEnvironment } from "./fly-deploy-catalog.js";
 import { Effect } from "effect";
 
@@ -172,10 +174,26 @@ function runProcess(
   });
 }
 
+function writeRouterNginxConfig(deployContextDir: string): void {
+  const nginxPath = resolve(deployContextDir, "nginx.conf");
+  const startScriptPath = resolve(deployContextDir, "start-router.sh");
+  writeFileSync(nginxPath, renderFlyRouterNginxConf(flyRouterRoutes), "utf8");
+  writeFileSync(startScriptPath, renderFlyRouterEntrypoint(flyRouterRoutes), {
+    encoding: "utf8",
+    mode: 0o755,
+  });
+}
+
 function buildForDeploy(component: FlyComponentConfig): Effect.Effect<void, Error> {
   switch (component.buildMode) {
     case "none":
       return Effect.void;
+    case "router":
+      return Effect.log(`Generating router nginx config for ${component.key}...`).pipe(
+        Effect.andThen(
+          Effect.sync(() => writeRouterNginxConfig(component.deployContext)),
+        ),
+      );
     case "vite-static":
     case "tanstack-static":
       return Effect.log(`Building ${component.key} (static)...`).pipe(

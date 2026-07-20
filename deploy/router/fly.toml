@@ -1,4 +1,4 @@
-app = 'pietersoudan-landing'
+app = 'pietersoudan-router'
 primary_region = 'ams'
 
 [build]
@@ -17,7 +17,7 @@ interval = '30s'
 timeout = '5s'
 grace_period = '10s'
 method = 'GET'
-path = '/'
+path = '/health'
 protocol = 'http'
 
 [[vm]]

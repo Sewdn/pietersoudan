@@ -8,15 +8,21 @@ Deploy wrappers live under `deploy/`; registry paths are in `apps/cli-ops/pieter
 
 ```bash
 pietersoudan-ops fly deploy landing
+pietersoudan-ops fly deploy router
 pietersoudan-ops fly deploy all
 pietersoudan-ops fly status landing
 pietersoudan-ops fly logs landing
 pietersoudan-ops fly open landing
+
+# Custom domain (pietersoudan.be + wildcard)
+pietersoudan-ops fly domain bootstrap
+pietersoudan-ops fly certs setup
+pietersoudan-ops fly certs check
 ```
 
-The deploy command prerenders `apps/frontend-landing` (TanStack Start), copies `dist/client/` into `deploy/frontend-landing/dist/`, then runs `fly deploy` with the nginx wrapper image.
+The landing deploy prerenders `apps/frontend-landing`, copies `dist/client/` into `deploy/frontend-landing/dist/`, then runs `fly deploy`. The router deploy generates nginx config from `flyRouterRoutes` and proxies to backend apps over `.internal`.
 
-See [`deploy/README.md`](../../deploy/README.md) for Fly app names and build flow.
+See [`deploy/README.md`](../../deploy/README.md) for Fly app names, DNS, and wildcard certificate setup.
 
 ## Scripts
 

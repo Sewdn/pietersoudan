@@ -6,6 +6,12 @@ import {
   type FlyAction,
 } from "../services/fly-operations-service.js";
 import {
+  runFlyCertsCheck,
+  runFlyCertsSetup,
+  runFlyFlycastSetup,
+  runFlyRouterBootstrap,
+} from "../services/fly-domain-service.js";
+import {
   runInteractiveFlyDeploy,
   shouldRunInteractiveDeploy,
 } from "../services/fly-interactive-deploy-service.js";
@@ -104,6 +110,50 @@ export const flyMachinesCommand = makeFlyActionCommand(
   "List Fly machines for one or more components.",
 );
 
+export const flyCertsSetupCommand = Command.make("setup", {}, () => runFlyCertsSetup()).pipe(
+  Command.withDescription(
+    "Add apex and wildcard certificates on the edge router app, then run fly certs check.",
+  ),
+);
+
+export const flyCertsCheckCommand = Command.make("check", {}, () => runFlyCertsCheck()).pipe(
+  Command.withDescription(
+    "Check DNS and certificate status for apex and wildcard hostnames on the edge router.",
+  ),
+);
+
+export const flyFlycastCommand = Command.make(
+  "flycast",
+  {
+    app: Argument.string("app").pipe(
+      Argument.withDescription("Fly app name to expose on the private network (e.g. pietersoudan-landing)."),
+    ),
+  },
+  ({ app }) => runFlyFlycastSetup(app),
+).pipe(
+  Command.withDescription(
+    "Allocate a Flycast IPv6 address (cross-org private access only; same-org router uses .internal).",
+  ),
+);
+
+export const flyRouterBootstrapCommand = Command.make("bootstrap", {}, () =>
+  runFlyRouterBootstrap(),
+).pipe(
+  Command.withDescription(
+    "One-time domain setup: add router TLS certificates and run fly certs check.",
+  ),
+);
+
+export const flyCertsCommand = Command.make("certs").pipe(
+  Command.withSubcommands([flyCertsSetupCommand, flyCertsCheckCommand]),
+  Command.withDescription("Manage TLS certificates for pietersoudan.be on the edge router."),
+);
+
+export const flyDomainCommand = Command.make("domain").pipe(
+  Command.withSubcommands([flyRouterBootstrapCommand, flyFlycastCommand]),
+  Command.withDescription("DNS, Flycast, and first-time custom-domain setup."),
+);
+
 export const flyCommand = Command.make("fly").pipe(
   Command.withSubcommands([
     flyDeployCommand,
@@ -112,6 +162,8 @@ export const flyCommand = Command.make("fly").pipe(
     flyOpenCommand,
     flySshCommand,
     flyMachinesCommand,
+    flyCertsCommand,
+    flyDomainCommand,
   ]),
   Command.withDescription("Fly.io deployment and operational tasks."),
 );
