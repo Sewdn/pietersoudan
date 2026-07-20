@@ -1,0 +1,36 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "78fbdb6a77fe",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 12,
+  "files_touched": [
+    "apps/cli-ops/README.md",
+    "apps/cli-ops/pietersoudan-config.ts",
+    "apps/cli-ops/src/commands/fly.ts",
+    "apps/cli-ops/src/services/fly-deploy-catalog.ts",
+    "apps/cli-ops/src/services/fly-domain-service.ts",
+    "apps/cli-ops/src/services/fly-operations-service.ts",
+    "apps/cli-ops/src/services/fly-router-nginx.ts",
+    "deploy/README.md",
+    "deploy/frontend-landing/fly.toml",
+    "deploy/router/.gitignore",
+    "deploy/router/Dockerfile",
+    "deploy/router/fly.toml"
+  ],
+  "sessions": [
+    {
+      "metadata": "/78/fbdb6a77fe/0/metadata.json",
+      "transcript": "/78/fbdb6a77fe/0/full.jsonl",
+      "content_hash": "/78/fbdb6a77fe/0/content_hash.txt",
+      "prompt": "/78/fbdb6a77fe/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 0,
+    "api_call_count": 0
+  }
+}

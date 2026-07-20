@@ -1,0 +1,593 @@
+I have scaffolded this application or this project to build me a portfolio website. I have also scaffolded a new app in the apps folder as a tanstack start frontend application in react called landing where I want to develop the static landing page for the portfolio website.@apps/frontend-landing 
+
+As a first version for this static landing page, I just want to Set up a very lightweight page with company information and a short description in in my specializations as a software engineer system architect and IT consultant. I have added my curriculum Vitae as inspiration please set up the design for this static front end page and make sure to use tailwind and ShadCN, set up a Tailwind theme in the UI package.@packages/ui/src/styles/themes/default.css 
+
+@docs/cv/CV_Pieter-Soudan.pdf @docs/cv/CV Pieter Soudan motivatiebrief (NL).pdf @docs/cv/CV Pieter Soudan cover letter (EN).pdf @docs/cv/CV Pieter Soudan (EN).pdf @docs/cv/CV Pieter Soudan (NL).pdf 
+
+Company information:
+Sweet & Savory
+BE0553981747
+
+---
+
+I have scaffolded this application or this project to build me a portfolio website. I have also scaffolded a new app in the apps folder as a tanstack start frontend application in react called landing where I want to develop the static landing page for the portfolio website.@apps/frontend-landing 
+
+As a first version for this static landing page, I just want to Set up a very lightweight page with company information and a short description in in my specializations as a software engineer system architect and IT consultant. I have added my curriculum Vitae as inspiration please set up the design for this static front end page and make sure to use tailwind and ShadCN, set up a Tailwind theme in the UI package.@packages/ui/src/styles/themes/default.css 
+
+@docs/cv/CV_Pieter-Soudan.pdf @docs/cv/CV Pieter Soudan motivatiebrief (NL).pdf @docs/cv/CV Pieter Soudan cover letter (EN).pdf @docs/cv/CV Pieter Soudan (EN).pdf @docs/cv/CV Pieter Soudan (NL).pdf 
+
+Company information:
+Sweet & Savory
+BE0553981747
+
+---
+
+@docs/cv/CV Pieter Soudan (EN).pdf @docs/cv/CV Pieter Soudan cover letter (EN).pdf Please convert these PDFs to readable Markdown files.
+
+---
+
+Please also add following company information:
+Sweet & Savory
+Drabstraat 148
+2550 kontich
+
+btw: BE0553.981.747
+rekeningnummer: BE83 9734 1178 2515
+
+---
+
+/git-commits this first iteration and setup
+
+---
+
+/git-commits this first iteration and setup
+
+---
+
+@docs/designs/stitch_minimalist_agentic_systems_portfolio/code.htmlNow, please look at a design for another portfolio website iteration I have designed. Look at the code and the tailwind setup and theme. I want you to use the same bold and design and full width typographic design also incorporate a bit of the content of this landing page, please also look at the screenshsot and mimic the design in the current implementation and tailwinf theme@docs/designs/stitch_minimalist_agentic_systems_portfolio/DESIGN.md @docs/designs/stitch_minimalist_agentic_systems_portfolio/screen.png .
+
+---
+
+@docs/designs/stitch_minimalist_agentic_systems_portfolio/code.htmlNow, please look at a design for another portfolio website iteration I have designed. Look at the code and the tailwind setup and theme. I want you to use the same bold and design and full width typographic design also incorporate a bit of the content of this landing page, please also look at the screenshsot and mimic the design in the current implementation and tailwinf theme@docs/designs/stitch_minimalist_agentic_systems_portfolio/DESIGN.md @docs/designs/stitch_minimalist_agentic_systems_portfolio/screen.png .
+
+---
+
+Are we sure the tailwind setup is correct? I don't think all of the tailwind files are being sourced right now because the design is not really as expected.
+
+---
+
+Are we sure the tailwind setup is correct? I don't think all of the tailwind files are being sourced right now because the design is not really as expected.
+
+---
+
+Please also check all contrasting foreground and background colours since lots of sections are not readable or visible right now. Please look at the screenshots only the introductory header hero page is currently readable.The black section after the yellow section and the following white section and grey section are not displaying any content as you can see in screenshots.
+
+---
+
+Now please make sure that content in the different sections are being animated in and out when scrolling over the different sections. Use a subtle, zoom and a fade for the motion.
+
+---
+
+Now please make sure that content in the different sections are being animated in and out when scrolling over the different sections. Use a subtle, zoom and a fade for the motion.
+
+---
+
+@verbouwing/apps/cli-ops/src/services/fly-deploy-catalog.ts @verbouwing/apps/cli-ops/src/services/fly-interactive-deploy-service.ts @verbouwing/apps/cli-ops/src/services/fly-operations-service.ts Please look at a reference implementation to setup a CLI application for deploying the created frontend application as a statically hosted front-end website build (on fly.io)@verbouwing/deploy/README.md
+
+---
+
+/git-commits ops cli
+
+---
+
+/git-commits ops cli
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:102-103 Make this list data driven.
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:102-103 Make this list data driven.
+
+---
+
+only allow (word)breaks between the headlineRoles on the delimter character. control them as seprate elements
+
+---
+
+only allow (word)breaks between the headlineRoles on the delimter character. control them as seprate elements
+
+---
+
+improve readability by decreasing character spacing
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:127 give this XP another foreground color, making the +23yrs standout as the only emphasised item in the h1
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:127 give this XP another foreground color, making the +23yrs standout as the only emphasised item in the h1
+
+---
+
+yes, revert
+
+---
+
+yes, revert
+
+---
+
+I don't want the the limiter to be shown at the start of a line so when the page width is limited and the headlines are broken into multiple lines I want to remove the the limited at the front of each line, over the start of each line. How to do this do this using pure CSS?
+
+---
+
+Also note trading delimited at the end of a line, the line break is delimited enough.
+
+---
+
+Also no trailing delimiter at the end of a line, the line break is delimited enough.
+
+---
+
+Also no trailing delimiter at the end of a line, the line break is delimited enough.
+
+---
+
+revert this last chnage. Weird quirks when removing the delimeter influences the line break algorithms (continuous loop)
+
+---
+
+revert this last chnage. Weird quirks when removing the delimeter influences the line break algorithms (continuous loop)
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:147-169 change this section with a label cloud or a cloud of labels of core values for what I stand for or I represent@pietersoudan/docs/cv/CV Pieter Soudan (EN).md @pietersoudan/docs/cv/CV Pieter Soudan cover letter (EN).md
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:147-169 change this section with a label cloud or a cloud of labels of core values for what I stand for or I represent@pietersoudan/docs/cv/CV Pieter Soudan (EN).md @pietersoudan/docs/cv/CV Pieter Soudan cover letter (EN).md
+
+---
+
+Center this block and make this cloud animated. Add some motion to individual cloud labels and make sure they are animated as a group as well.
+
+Make sure the cloud is centered and is not stretched over the entire fluid width of the page.
+
+Set up a reusable animated label cloud component.
+
+---
+
+Remove the shimmer animation.
+
+---
+
+Remove the shimmer animation.
+
+---
+
+No, I only wanted to remove the shimmering of the boxes, not the continuous loop of subtle movement. This was okay.
+
+---
+
+No, I only wanted to remove the shimmering of the boxes, not the continuous loop of subtle movement. This was okay.
+
+---
+
+Now reintroduce the box intro state again. The shimmer is being caused by the subtle animated rotations because of the anti-aliasing of the border. Make sure the float and drift are still animated but don't allow rotation changes.
+
+---
+
+Remove the borders from the labels and add a subtle background that stands out from black, even if only slightly.
+
+---
+
+Remove the borders from the labels and add a subtle background that stands out from black, even if only slightly.
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:78-93  Make sure this list of core values are written as truly values. System architecture is not really a value, domain-driven design is because it is a design principle I advocate for
+
+---
+
+@pietersoudan/apps/frontend-landing/src/components/landing-page.tsx:78-93  Make sure this list of core values are written as truly values. System architecture is not really a value, domain-driven design is because it is a design principle I advocate for
+
+---
+
+make sure the docked up bar is hidden when scrolling down only show again and keep it docked when scrolling back up, make the hiding and showing of this appbar animated with natural physics based motion design.
+
+---
+
+make sure the docked up bar is hidden when scrolling down only show again and keep it docked when scrolling back up, make the hiding and showing of this appbar animated with natural physics based motion design.
+
+---
+
+make sure the docked app bar is hidden when scrolling down only show again and keep it docked when scrolling back up, make the hiding and showing of this appbar animated with natural physics based motion design.
+
+---
+
+make sure the docked app bar is hidden when scrolling down only show again and keep it docked when scrolling back up, make the hiding and showing of this appbar animated with natural physics based motion design.
+
+---
+
+Clicking my name in the add bar should always direct to home, the top of the page. Also currently the menu with the three items disappears on mobile replace this with a handbook icon in the top left and make sure this opens a small Navigation panel (using shadcn base components).
+
+---
+
+Clicking my name in the add bar should always direct to home, the top of the page. Also currently the menu with the three items disappears on mobile replace this with a handbook icon in the top left and make sure this opens a small Navigation panel (using shadcn base components).
+
+---
+
+Clicking my name (title) in the app bar should always direct to home, the top of the page. Also currently the menu with the three items disappears on mobile replace this with a handbook icon in the top left and make sure this opens a small Navigation panel (using shadcn base components).
+
+---
+
+Clicking my name (title) in the app bar should always direct to home, the top of the page. Also currently the menu with the three items disappears on mobile replace this with a handbook icon in the top left and make sure this opens a small Navigation panel (using shadcn base components).
+
+---
+
+/git-commits all changes
+
+---
+
+/git-commits all changes
+
+---
+
+Implement a shader that is being used as a background to for an animated grid. Also, make a shader variation for other background animations and apply this background animation to the section of the label cloud. Be inspired by the example implementation in the static mockup for this design.@pietersoudan/docs/designs/stitch_minimalist_agentic_systems_portfolio/code.html
+
+---
+
+Implement a shader that is being used as a background to for an animated grid. Also, make a shader variation for other background animations and apply this background animation to the section of the label cloud. Be inspired by the example implementation in the static mockup for this design.@pietersoudan/docs/designs/stitch_minimalist_agentic_systems_portfolio/code.html
+
+---
+
+/git-commits
+
+---
+
+/git-commits
+
+---
+
+@pietersoudan/apps/cli-ops/pietersoudan-config.ts What steps to take to deploy this application to fly?
+
+---
+
+@pietersoudan/apps/cli-ops/pietersoudan-config.ts What steps to take to deploy this application to fly?
+
+---
+
+I removed the shaded backgrounds. We'll revisit later. Please commit.
+
+---
+
+I removed the shaded backgrounds. We'll revisit later. Please commit.
+
+---
+
+The app is now deployed using the fly.io URL, but I now also want to deploy it on the available pietersoudan.be domain. I also want to be able to deploy other applications on subdomains within this domain.
+
+I want to set up a wildcard certificate for all of the available subdomains on pietersoudan.be
+
+I'll need a router app to route incoming requests, i guess.
+
+---
+
+pietersoudan-ops fly certs check
+Usage:
+  fly certs check <hostname> [flags]
+
+Aliases:
+  check, show
+
+Flags:
+  -a, --app string      Application name
+  -c, --config string   Path to application configuration file
+  -h, --help            help for check
+  -j, --json            JSON output
+
+Global Flags:
+  -t, --access-token string   Fly API Access Token
+      --debug                 Print additional logs and traces
+      --verbose               Verbose output
+
+Error: accepts 1 arg(s), received 0
+[12:59:05.617] ERROR (#2): Error: Command failed (1): fly certs check --config /Users/psoudan/workspace/11-personal/pietersoudan/deploy/router/fly.toml (cwd: /Users/psoudan/workspace/11-personal/pietersoudan)
+    at <anonymous> (/Users/psoudan/workspace/11-personal/pietersoudan/apps/cli-ops/src/services/fly-domain-service.ts:37:19)
+    at processTicksAndRejections (native:7:39)
+
+---
+
+pietersoudan-ops fly certs check
+Usage:
+  fly certs check <hostname> [flags]
+
+Aliases:
+  check, show
+
+Flags:
+  -a, --app string      Application name
+  -c, --config string   Path to application configuration file
+  -h, --help            help for check
+  -j, --json            JSON output
+
+Global Flags:
+  -t, --access-token string   Fly API Access Token
+      --debug                 Print additional logs and traces
+      --verbose               Verbose output
+
+Error: accepts 1 arg(s), received 0
+[12:59:05.617] ERROR (#2): Error: Command failed (1): fly certs check --config /Users/psoudan/workspace/11-personal/pietersoudan/deploy/router/fly.toml (cwd: /Users/psoudan/workspace/11-personal/pietersoudan)
+    at <anonymous> (/Users/psoudan/workspace/11-personal/pietersoudan/apps/cli-ops/src/services/fly-domain-service.ts:37:19)
+    at processTicksAndRejections (native:7:39)
+
+---
+
+wildcard cert not working, since www. is not verified?
+
+===
+
+pietersoudan-ops fly certs check
+[13:00:26.503] INFO (#2): ==> fly certs check pietersoudan.be
+  Status                  = Issued
+  Hostname                = pietersoudan.be
+  Certificate Authority   = Let's Encrypt
+  Issued                  = rsa,ecdsa
+  Added to App            = 2 minutes ago
+  Expires                 = 2 months from now
+
+✓ Certificate is verified and active
+[13:00:31.021] INFO (#2): ==> fly certs check www.pietersoudan.be
+  Status                  = Not verified
+  Hostname                = www.pietersoudan.be
+
+! No AAAA records were found for your domain
+  Add AAAA records pointing to your app's IPv6 addresses, or add a _fly-ownership TXT record to verify domain ownership
+
+Run fly certs setup www.pietersoudan.be to view DNS setup instructions.
+[13:00:38.090] INFO (#2): ==> fly certs check *.pietersoudan.be
+  Status                  = Issued
+  Hostname                = *.pietersoudan.be
+  Certificate Authority   = Let's Encrypt
+  Issued                  = rsa,ecdsa
+  Added to App            = 1 minute ago
+  Expires                 = 2 months from now
+
+✓ Certificate is verified and active
+
+---
+
+wildcard cert not working, since www. is not verified?
+
+===
+
+pietersoudan-ops fly certs check
+[13:00:26.503] INFO (#2): ==> fly certs check pietersoudan.be
+  Status                  = Issued
+  Hostname                = pietersoudan.be
+  Certificate Authority   = Let's Encrypt
+  Issued                  = rsa,ecdsa
+  Added to App            = 2 minutes ago
+  Expires                 = 2 months from now
+
+✓ Certificate is verified and active
+[13:00:31.021] INFO (#2): ==> fly certs check www.pietersoudan.be
+  Status                  = Not verified
+  Hostname                = www.pietersoudan.be
+
+! No AAAA records were found for your domain
+  Add AAAA records pointing to your app's IPv6 addresses, or add a _fly-ownership TXT record to verify domain ownership
+
+Run fly certs setup www.pietersoudan.be to view DNS setup instructions.
+[13:00:38.090] INFO (#2): ==> fly certs check *.pietersoudan.be
+  Status                  = Issued
+  Hostname                = *.pietersoudan.be
+  Certificate Authority   = Let's Encrypt
+  Issued                  = rsa,ecdsa
+  Added to App            = 1 minute ago
+  Expires                 = 2 months from now
+
+✓ Certificate is verified and active
+
+---
+
+{
+  "id": "0000000000000000186263ac186364cfaa5f7fb4c00e1265-1784372858475065125",
+  "message": "172.19.37.249 - - [18/Jul/2026:11:07:38 +0000] \"GET / HTTP/1.1\" 404 153 \"-\" \"Consul Health Check\" \"-\"",
+  "timestamp": "2026-07-18T11:07:38.475Z",
+  "level": "info",
+  "instance": "815997f9470348",
+  "provider": "app",
+  "region": "ams",
+  "process_group": null
+}
+
+---
+
+{
+  "id": "0000000000000000186263ac186364cfaa5f7fb4c00e1265-1784372858475065125",
+  "message": "172.19.37.249 - - [18/Jul/2026:11:07:38 +0000] \"GET / HTTP/1.1\" 404 153 \"-\" \"Consul Health Check\" \"-\"",
+  "timestamp": "2026-07-18T11:07:38.475Z",
+  "level": "info",
+  "instance": "815997f9470348",
+  "provider": "app",
+  "region": "ams",
+  "process_group": null
+}
+
+---
+
+https://www.pietersoudan.be 
+502 Bad Gateway
+
+nginx/1.27.5
+
+---
+
+https://www.pietersoudan.be 
+502 Bad Gateway
+
+nginx/1.27.5
+
+---
+
+now ok
+
+---
+
+now ok
+
+---
+
+https://pietersoudan.be 
+
+502 Bad Gateway
+
+nginx/1.27.5
+
+---
+
+https://pietersoudan.be 
+
+502 Bad Gateway
+
+nginx/1.27.5
+
+---
+
+{
+  "id": "6d3fa7fd-888c-4b8c-bba6-d0a16bafc2be",
+  "message": "[PM01] machines API returned an error: \"machine ID 815997f9470348 lease currently held by d65d0b0d-2252-5020-be5f-a1289e2d9c59@tokens.fly.io, expires at 2026-07-18T11:31:05Z\"",
+  "timestamp": "2026-07-18T11:30:56.830Z",
+  "level": "error",
+  "instance": "815997f9470348",
+  "provider": "proxy",
+  "region": "ams",
+  "process_group": null
+}
+
+---
+
+{
+  "id": "6d3fa7fd-888c-4b8c-bba6-d0a16bafc2be",
+  "message": "[PM01] machines API returned an error: \"machine ID 815997f9470348 lease currently held by d65d0b0d-2252-5020-be5f-a1289e2d9c59@tokens.fly.io, expires at 2026-07-18T11:31:05Z\"",
+  "timestamp": "2026-07-18T11:30:56.830Z",
+  "level": "error",
+  "instance": "815997f9470348",
+  "provider": "proxy",
+  "region": "ams",
+  "process_group": null
+}
+
+---
+
+11:52:21
+10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
+11:52:21
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+11:52:21
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+11:52:21
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+11:52:21
+/docker-entrypoint.sh: Configuration complete; ready for start up
+11:52:21
+2026/07/18 11:52:21 [emerg] 640#640: host not found in upstream "pietersoudan-landing.internal" in /etc/nginx/conf.d/default.conf:37
+11:52:21
+nginx: [emerg] host not found in upstream "pietersoudan-landing.internal" in /etc/nginx/conf.d/default.conf:37
+11:52:21
+Machine started in 1.402s
+11:52:21
+machine started in 1.540915808s
+11:52:21
+2026/07/18 11:52:21 INFO SSH listening listen_address=[fdaa:3:8dd:a7b:32d:f5af:ba53:2]:22
+11:52:22
+ INFO Main child exited normally with code: 1
+11:52:22
+ INFO Starting clean up.
+11:52:24
+[    3.587239] reboot: Restarting system
+11:52:27
+waiting for machine to be reachable on 0.0.0.0:8080 (waited 5.270502917s so far)
+11:52:28
+machine has reached its max restart count of 10
+11:52:30
+[PM05] failed to connect to machine: gave up after 15 attempts (in 8.274804399s)
+11:52:33
+Starting machine
+11:52:33
+2026-07-18T11:52:33.328953896 [01KXTG3X3CR3YKVSKW440B10B1:main] Running Firecracker v1.14.4
+11:52:33
+2026-07-18T11:52:33.329192131 [01KXTG3X3CR3YKVSKW440B10B1:main] Listening on API socket ("/fc.sock").
+11:52:34
+ INFO Starting init (commit: ea887ee)...
+11:52:34
+ INFO Preparing to run: `/docker-entrypoint.sh nginx -g daemon off;` as root
+11:52:34
+ INFO [fly api proxy] listening at /.fly/api
+11:52:34
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+11:52:34
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+
+---
+
+11:52:21
+10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
+11:52:21
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+11:52:21
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+11:52:21
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+11:52:21
+/docker-entrypoint.sh: Configuration complete; ready for start up
+11:52:21
+2026/07/18 11:52:21 [emerg] 640#640: host not found in upstream "pietersoudan-landing.internal" in /etc/nginx/conf.d/default.conf:37
+11:52:21
+nginx: [emerg] host not found in upstream "pietersoudan-landing.internal" in /etc/nginx/conf.d/default.conf:37
+11:52:21
+Machine started in 1.402s
+11:52:21
+machine started in 1.540915808s
+11:52:21
+2026/07/18 11:52:21 INFO SSH listening listen_address=[fdaa:3:8dd:a7b:32d:f5af:ba53:2]:22
+11:52:22
+ INFO Main child exited normally with code: 1
+11:52:22
+ INFO Starting clean up.
+11:52:24
+[    3.587239] reboot: Restarting system
+11:52:27
+waiting for machine to be reachable on 0.0.0.0:8080 (waited 5.270502917s so far)
+11:52:28
+machine has reached its max restart count of 10
+11:52:30
+[PM05] failed to connect to machine: gave up after 15 attempts (in 8.274804399s)
+11:52:33
+Starting machine
+11:52:33
+2026-07-18T11:52:33.328953896 [01KXTG3X3CR3YKVSKW440B10B1:main] Running Firecracker v1.14.4
+11:52:33
+2026-07-18T11:52:33.329192131 [01KXTG3X3CR3YKVSKW440B10B1:main] Listening on API socket ("/fc.sock").
+11:52:34
+ INFO Starting init (commit: ea887ee)...
+11:52:34
+ INFO Preparing to run: `/docker-entrypoint.sh nginx -g daemon off;` as root
+11:52:34
+ INFO [fly api proxy] listening at /.fly/api
+11:52:34
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+11:52:34
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+
+---
+
+router keeps on restarting
+
+---
+
+router keeps on restarting
