@@ -3,21 +3,8 @@
   "checkpoint_id": "78fbdb6a77fe",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 12,
-  "files_touched": [
-    "apps/cli-ops/README.md",
-    "apps/cli-ops/pietersoudan-config.ts",
-    "apps/cli-ops/src/commands/fly.ts",
-    "apps/cli-ops/src/services/fly-deploy-catalog.ts",
-    "apps/cli-ops/src/services/fly-domain-service.ts",
-    "apps/cli-ops/src/services/fly-operations-service.ts",
-    "apps/cli-ops/src/services/fly-router-nginx.ts",
-    "deploy/README.md",
-    "deploy/frontend-landing/fly.toml",
-    "deploy/router/.gitignore",
-    "deploy/router/Dockerfile",
-    "deploy/router/fly.toml"
-  ],
+  "checkpoints_count": 1,
+  "files_touched": null,
   "sessions": [
     {
       "metadata": "/78/fbdb6a77fe/0/metadata.json",
